@@ -9,6 +9,7 @@ RUN rm /var/www/html/index.html
 RUN rm /etc/apache2/sites-enabled/000-default.conf
 
 COPY index.php /var/www/html/index.php
+COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
 RUN chmod 777 -R /var/log/apache2
 
